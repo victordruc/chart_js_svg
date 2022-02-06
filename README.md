@@ -1,1 +1,1 @@
-# chart_js_svg
+# All config property settings in ./js/app.js
