@@ -1,0 +1,72 @@
+@import "_chart.scss";
+
+// Parametrii temporari----------------------------->
+
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapperChart {
+    // margin-left: 70px;
+
+    padding: 50px;
+    padding-left: 100px;
+    background-color: var(--background-primary);
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px var(--background-primary);
+}
+
+// <-----------------------------Parametrii temporari
+
+@media (max-width:1150px) {
+    #containerChart {
+        width: 860px;
+    }
+}
+
+@media (max-width:1050px) {
+    #containerChart {
+        width: 760px;
+    }
+}
+
+@media (max-width:950px) {
+    #containerChart {
+        width: 660px;
+    }
+    .day-label {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width:850px) {
+    #containerChart {
+        width: 560px;
+    }
+    .day-label {
+        font-size: 12px !important;
+        ._iac, ._iab {
+            padding: 0 !important;
+        }
+    }
+    .day-labels-wrapper._id7._iaL+.month-slider {
+        .month-label:first-child {
+            text-align: right !important;
+            padding-right: 4px !important;
+        }
+        .month-label:last-child {
+            text-align: left !important;
+            padding-left: 4px !important;
+        }
+    }
+}
+
+@media (max-width:750px) {
+    #containerChart {
+        width: 460px;
+    }
+}
